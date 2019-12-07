@@ -158,6 +158,7 @@
     <ClInclude Include="Info.h" />
     <ClInclude Include="MyClass.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Tag.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Tag.cpp" />
     <ClCompile Include="testMPI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
