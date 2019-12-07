@@ -6,6 +6,10 @@ MyClass::MyClass()
 {
 }
 
+MyClass::MyClass(int x)
+{
+	this->x = x;
+}
 
 MyClass::~MyClass()
 {

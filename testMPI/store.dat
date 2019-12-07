@@ -1,0 +1,5 @@
+22 serialization::archive 17 0 0 0 0 3 0 12 ThisFile.txt 12 ThatFile.txt 13 OtherFile.txt 0 0 4 0 3 1 0
+0 123 3
+1 234 3
+2 1 3
+3 -99

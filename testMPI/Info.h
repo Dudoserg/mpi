@@ -5,20 +5,29 @@
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
 
+#include "MyClass.h"
+
 #pragma once
-class MyClass
+class Info
 {
+
+
 public:
-	MyClass();
-	MyClass(int x);
-	~MyClass();
+	std::vector<std::string> filenames;
 
-	int x;
+	std::vector<MyClass*> myclasses;
 
+	Info();
+	~Info();
+	void AddFilename(const std::string& filename);
+	void Print() const;
+
+	// Serialize the std::vector member of Info
 	template<class Archive>
 	void serialize(Archive & ar, const unsigned int version)
 	{
-		ar & x;
+		ar & filenames;
+		ar & myclasses;
 	}
-};
 
+};
